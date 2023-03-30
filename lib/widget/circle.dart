@@ -14,10 +14,12 @@ class Circle extends StatelessWidget {
       width: this.size,
       height: this.size,
       decoration: BoxDecoration(
-          shape: BoxShape.circle,
-          gradient: LinearGradient(
+        shape: BoxShape.circle,
+        gradient: LinearGradient(
             colors: this.colors,
-          )),
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter),
+      ),
     );
   }
 }
